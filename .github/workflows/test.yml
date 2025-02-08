@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: test cmd
-        run: cd cmd && go test -v ./... && cmd ..
+        run: cd cmd && go test -v ./... && cd ..
   
   build:
     runs-on: ubuntu-latest
