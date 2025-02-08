@@ -10,8 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        uses: actions/checkout@v4
+      - name: test 
+        run: cd cmd && go test -v ./...
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: Echo
-        run: echo Hello World!
-      - name: Directory List
-        run: ls
+      - name: build test
+        run: sh scripts/build.sh
