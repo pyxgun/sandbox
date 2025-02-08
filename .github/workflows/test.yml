@@ -1,9 +1,11 @@
 name: github-actions-sandbox
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
     branches:
-      - develop
+      - 'main'
 
 jobs:
   test:
@@ -11,8 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: test 
-        run: cd cmd && go test -v ./...
+      - name: test cmd
+        run: cd cmd && go test -v ./... && cmd ..
   
   build:
     runs-on: ubuntu-latest

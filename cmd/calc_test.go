@@ -15,7 +15,7 @@ func TestSum(t *testing.T) {
 
 func TestSub(t *testing.T) {
 	actual := sub(5, 1)
-	expected := 3
+	expected := 4
 
 	assert.Equal(t, expected, actual)
 }
