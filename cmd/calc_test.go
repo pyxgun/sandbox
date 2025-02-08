@@ -19,3 +19,10 @@ func TestSub(t *testing.T) {
 
 	assert.Equal(t, expected, actual)
 }
+
+func TestMul(t *testing.T) {
+	actual := mul(4, 9)
+	expected := 36
+
+	assert.Equal(t, expected, actual)
+}
