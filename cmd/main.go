@@ -11,4 +11,5 @@ func main() {
 
 	fmt.Println(sum(1, 2))
 	fmt.Println(sub(5, 1))
+	fmt.Println(div(10, 2))
 }

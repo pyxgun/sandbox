@@ -19,3 +19,10 @@ func TestSub(t *testing.T) {
 
 	assert.Equal(t, expected, actual)
 }
+
+func TestDiv(t *testing.T) {
+	actual := div(10, 5)
+	expected := 2
+
+	assert.Equal(t, expected, actual)
+}

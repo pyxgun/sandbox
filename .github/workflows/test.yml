@@ -1,11 +1,15 @@
 name: github-actions-sandbox
 
 on:
-  pull_request:
-    types:
-      - opened
+#  pull_request:
+#    types:
+#      - opened
+#    branches:
+#      - 'main'
+  push:
     branches:
-      - 'main'
+      - feature/**
+        fix/**
 
 jobs:
   test:
