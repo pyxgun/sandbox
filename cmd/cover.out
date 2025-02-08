@@ -1,0 +1,5 @@
+mode: set
+test/calc.go:3.24,5.2 1 1
+test/calc.go:7.24,9.2 1 1
+test/main.go:5.19,7.2 1 0
+test/main.go:9.13,14.2 3 0

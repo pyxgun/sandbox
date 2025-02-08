@@ -8,4 +8,7 @@ func HelloWorld() {
 
 func main() {
 	HelloWorld()
+
+	fmt.Println(sum(1, 2))
+	fmt.Println(sub(5, 1))
 }
