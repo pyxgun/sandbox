@@ -8,8 +8,8 @@ on:
 #      - 'main'
   push:
     branches:
-      - feature/**
-        fix/**
+      - 'feature/**'
+      - 'fix/**'
 
 jobs:
   test:
