@@ -12,3 +12,10 @@ func TestSum(t *testing.T) {
 
 	assert.Equal(t, expected, actulal)
 }
+
+func TestSub(t *testing.T) {
+	actual := sub(5, 1)
+	expected := 3
+
+	assert.Equal(t, expected, actual)
+}
